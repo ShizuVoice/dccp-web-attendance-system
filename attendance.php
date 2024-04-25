@@ -56,9 +56,11 @@ $result=mysqli_query($conn,$sql);
 			<p>Web version 2024.4.21</p>
 		</div>
 	</div>
-	<div class="content">
-		<h2>ATTENDANCE</h2>
-  		<div class="filter-panel w-25">
+	<div class="container pt-2" style="margin-left: 21%; width:75%">
+		<div class="card">
+			<div class="card-header"><h2>ATTENDANCE</h2> </div>
+			<div class="card-body">
+  		<div class="filter-panel" style="width:35%">
   		  <form>
   		    <label>Filter by:</label>
   		    <div class="form-check">
@@ -85,6 +87,7 @@ $result=mysqli_query($conn,$sql);
   		          <option value="12">December</option>
   		          <!-- add more options for each month -->
   		        </select>
+				
   		        <select class="form-select" id="year">
 					<option value="">Select Year</option>
 					<?php
@@ -99,9 +102,9 @@ $result=mysqli_query($conn,$sql);
 			<input type="hidden" id="filter-option" name="filterOption" value="<?php echo $filterOption; ?>">
   		  </form>
   		</div>
-		<table class="table">
+		<table class="table  table-striped">
 			<thead>
-				<tr>
+				<tr class=" border border-1 text-dark">
 					<th scope="col">ID #</th>
 					<th scope="col">Full Name</th>
 					<th scope="col">Date</th>
@@ -128,6 +131,7 @@ $result=mysqli_query($conn,$sql);
 				?>
 			</tbody>
 		</table>
+			</div>
 	</div>
 </body>
 </html>

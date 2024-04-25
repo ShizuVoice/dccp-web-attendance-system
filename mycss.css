@@ -9,7 +9,7 @@ img{
 
 }
 .sidebar {
-  width: 23%;
+  width: 20%;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
@@ -33,7 +33,9 @@ img{
   padding: 16px;
   margin:4px;
   width: 80%;
-  border-radius: 20px;
+  border-radius: 10px;
+  /* border-top-left-radius: 20px;
+  border-top-left-radius: 20px; */
   text-align:center;
   text-decoration: none;
   background-color: #838996;
