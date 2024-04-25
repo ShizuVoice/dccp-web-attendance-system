@@ -109,7 +109,7 @@ $teacher_can_edit = $row['teacher_can_edit'];
 	</div>
 
 	<div class="container" style="width:80%; margin-left: 20%;">
-		<div class="card mt-2 p-0" style="float:left; width:37%;height:520px">
+		<div class="card mt-2" style="float:left; width:33%;height:520px">
 			<div class="card-header">
 				<h2>Employee Profile</h2>
 			</div>
@@ -145,7 +145,7 @@ $teacher_can_edit = $row['teacher_can_edit'];
 
 		</div>
 	
-		<div class="card me-1 mt-2" style="float:right; width:60%;height:520px">
+		<div class="card me-1 mt-2" style="float:right; width:64%;height:520px">
 			<div class="card-header">
 				<h2>Schedule Time</h2>
 			</div>
