@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+img{
+    margin-top: 30px;
+  margin-bottom: 30px;
+  width: 80%;
+
+}
+.sidebar {
+  width: 23%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.version {
+  text-align: center;
+  font-size: 0.8rem; /* Adjust as needed */
+  padding: 10px 0; /* Add some padding for better appearance */
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Ensure it spans the full width of the sidebar */
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Add some padding for better appearance */
+ }
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  margin:4px;
+  width: 80%;
+  border-radius: 20px;
+  text-align:center;
+  text-decoration: none;
+  background-color: #838996;
+  border: 1px;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 40%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.filter-panel {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.filter-panel label {
+  margin-right: 10px;
+}
+
+.form-check {
+  margin-bottom: 10px;
+}
+
+.specific-month-filter {
+  margin-top: 10px;
+  display: none;
+}
+
+table.schedule-table input[type="text"] {
+  width: 100px;
+  text-align: center;
+}
+
+.btn-close-custom {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1rem; /* Adjust font size as needed */
+  color: #000; /* Adjust color as needed */
+}
+
+
+#specific-month:checked ~.specific-month-filter {
+  display: block;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
