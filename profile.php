@@ -137,9 +137,9 @@ $teacher_can_edit = $row['teacher_can_edit'];
 					</div>
 					<div class="form-group mt-4">
 				<!-- <input class="btn btn-success w-100" type="submit" name="btnlogin" value="Update" /> -->
-				<button type="button" class="btn btn-primary w-100">
+				<!-- <button type="button" class="btn btn-primary w-100">
 					Request Details Update
-				</button>
+				</button> -->
 			</div>
 			</div>
 
@@ -170,10 +170,10 @@ $teacher_can_edit = $row['teacher_can_edit'];
 								<td><input type="text" name="MonAMOut" value="<?php echo $mon_am_out ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
-								<td><input type="text" name="MonPMIn" value="<?php echo $mon_pm_in ?>"
+								<td><input type="text" name="MonPMIn" value="<?php echo  date('h:i:s',strtotime($mon_pm_in)) ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
-								<td><input type="text" name="MonPMOut" value="<?php echo $mon_pm_out ?>"
+								<td><input type="text" name="MonPMOut" value="<?php echo date('h:i:s',strtotime($mon_pm_out)) ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
 							</tr>
@@ -185,10 +185,10 @@ $teacher_can_edit = $row['teacher_can_edit'];
 								<td><input type="text" name="TueAMOut" value="<?php echo $tue_am_out ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
-								<td><input type="text" name="TuePMIn" value="<?php echo $tue_pm_in ?>"
+								<td><input type="text" name="TuePMIn" value="<?php echo date('h:i:s',strtotime($tue_pm_in)) ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
-								<td><input type="text" name="TuePMOut" value="<?php echo $tue_pm_out ?>"
+								<td><input type="text" name="TuePMOut" value="<?php echo date('h:i:s',strtotime($tue_pm_out)) ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
 							</tr>
@@ -200,10 +200,10 @@ $teacher_can_edit = $row['teacher_can_edit'];
 								<td><input type="text" name="WedAMOut" value="<?php echo $wed_am_out ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
-								<td><input type="text" name="WedPMIn" value="<?php echo $wed_pm_in ?>"
+								<td><input type="text" name="WedPMIn" value="<?php echo date('h:i:s',strtotime($wed_pm_in)) ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
-								<td><input type="text" name="WedPMOut" value="<?php echo $wed_pm_out ?>"
+								<td><input type="text" name="WedPMOut" value="<?php echo date('h:i:s',strtotime($wed_pm_out)) ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
 							</tr>
@@ -215,10 +215,10 @@ $teacher_can_edit = $row['teacher_can_edit'];
 								<td><input type="text" name="ThuAMOut" value="<?php echo $thu_am_out ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
-								<td><input type="text" name="ThuPMIn" value="<?php echo $thu_pm_in ?>"
+								<td><input type="text" name="ThuPMIn" value="<?php echo date('h:i:s',strtotime( $thu_pm_in)) ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
-								<td><input type="text" name="ThuPMOut" value="<?php echo $thu_pm_out ?>"
+								<td><input type="text" name="ThuPMOut" value="<?php echo date('h:i:s',strtotime($thu_pm_out)) ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
 							</tr>
@@ -230,10 +230,10 @@ $teacher_can_edit = $row['teacher_can_edit'];
 								<td><input type="text" name="FriAMOut" value="<?php echo $fri_am_out ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
-								<td><input type="text" name="FriPMIn" value="<?php echo $fri_pm_in ?>"
+								<td><input type="text" name="FriPMIn" value="<?php echo date('h:i:s',strtotime($fri_pm_in)) ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
-								<td><input type="text" name="FriPMOut" value="<?php echo $fri_pm_out ?>"
+								<td><input type="text" name="FriPMOut" value="<?php echo date('h:i:s',strtotime( $fri_pm_out)) ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
 							</tr>
@@ -245,10 +245,10 @@ $teacher_can_edit = $row['teacher_can_edit'];
 								<td><input type="text" name="SatAMOut" value="<?php echo $sat_am_out ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
-								<td><input type="text" name="SatPMIn" value="<?php echo $sat_pm_in ?>"
+								<td><input type="text" name="SatPMIn" value="<?php echo date('h:i:s',strtotime($sat_pm_in ))?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
-								<td><input type="text" name="SatPMOut" value="<?php echo $sat_pm_out ?>"
+								<td><input type="text" name="SatPMOut" value="<?php echo date('h:i:s',strtotime($sat_pm_out)) ?>"
 										style="width: 120px; text-align: center;" <?php if ($teacher_can_edit == 0)
 											echo 'readonly'; ?>></td>
 							</tr>
@@ -303,9 +303,10 @@ $teacher_can_edit = $row['teacher_can_edit'];
 							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 						</div>
 					</div>
+					
 				</div>
+				
 			</div>
-			
 			<div class="form-group p-2">
 				<!-- <input class="btn btn-success w-100" type="submit" name="btnlogin" value="Update" /> -->
 				<button type="button" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#confirmModal"

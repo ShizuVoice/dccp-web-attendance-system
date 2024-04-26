@@ -10,9 +10,12 @@ img{
 }
 .sidebar {
   width: 20%;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   position: fixed;
+  border-style: solid ;
+  border-color: #d0cdcd ;
   height: 100%;
+  margin:1px;
   overflow: auto;
 }
 
@@ -29,7 +32,7 @@ img{
 
 .sidebar a {
   display: block;
-  color: black;
+  color: white;
   padding: 16px;
   margin:4px;
   width: 80%;
@@ -38,7 +41,7 @@ img{
   border-top-left-radius: 20px; */
   text-align:center;
   text-decoration: none;
-  background-color: #838996;
+  background-color: #3966c9;
   border: 1px;
 }
  
@@ -48,7 +51,7 @@ img{
 }
 
 .sidebar a:hover:not(.active) {
-  background-color: #555;
+  background-color: #5d8bf0;
   color: white;
 }
 
