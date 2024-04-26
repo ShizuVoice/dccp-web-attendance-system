@@ -51,7 +51,7 @@ $result=mysqli_query($conn,$sql);
 	<div class="sidebar" align="center">
 	
 		<center><img  src="DCCPLOGO3.png"/> </center>
-		<h5> WELCOME: <?php echo $uname; ?></h5>
+		<h5> WELCOME: <?php echo strtoupper($uname); ?></h5>
 		<hr/>
 		<a href="profile.php">PROFILE</a>
 		<a href="attendance.php">ATTENDANCE</a>
@@ -60,7 +60,7 @@ $result=mysqli_query($conn,$sql);
 			<p>Web version 2024.4.21</p>
 		</div>
 	</div>
-	<div class="container pt-2" style="margin-left: 21%; width:75%">
+	<div class="container pt-2" style="margin-left: 21%; width:78%">
 		<div class="card">
 			<div class="card-header"><h2>ATTENDANCE</h2> </div>
 			<div class="card-body">
@@ -106,7 +106,7 @@ $result=mysqli_query($conn,$sql);
 			<input type="hidden" id="filter-option" name="filterOption" value="<?php echo $filterOption; ?>">
   		  </form>
   		</div>
-		<table class="table  table-striped">
+		<table class="table  table-striped table-hover">
 			<thead>
 				<tr class=" border border-1 text-dark">
 					<th scope="col">ID #</th>

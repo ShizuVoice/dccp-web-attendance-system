@@ -105,7 +105,7 @@ $teacher_can_edit = $row['teacher_can_edit'];
 <body>
 	<div class="sidebar" align="center">
 		<center><img src="DCCPLOGO3.png" /> </center>
-		<h5> WELCOME: <?php echo $uname; ?></h5>
+		<h5> WELCOME: <?php echo strtoupper($uname); ?></h5>
 		<hr />
 		<a href="profile.php">PROFILE</a>
 		<a href="attendance.php">ATTENDANCE</a>
