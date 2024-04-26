@@ -7,7 +7,10 @@ if(!isset($_SESSION['tid']))
 $tid=$_SESSION['tid'];
 
 $uname=$_SESSION['USNAME'];
-
+if($_SESSION['tid']==null)
+{
+	header("Location:logout.php");
+}
 include("config.php"); 
 
 // Get the year and month from the URL parameters or set to the current year and month if not present

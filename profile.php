@@ -5,10 +5,17 @@ session_start();
 // {
 // 	header("Location:login.php");
 // }
-
+if(!isset($_SESSION['tid']))
+{
+	header("Location:login.php");
+}
 $tid = $_SESSION['tid'];
 
 $uname = $_SESSION['USNAME'];
+if($_SESSION['tid']==null)
+{
+	header("Location:logout.php");
+}
 
 $sql = "";
 $ln = "dsadas";
